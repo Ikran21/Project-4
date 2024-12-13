@@ -1,0 +1,60 @@
+body{
+    background-color: #0a1f82;
+    color: white
+}
+.navbar{
+    background-color: lightgrey;
+    text-align: right;
+    height: 70px; 
+    font-size: 40px;
+}
+.navbar a{
+    text-decoration: none;
+}
+.navbar img{
+    height: 65px;
+    width: 75px;
+}
+h2{
+    font-style: italic;
+}
+form {
+    background-color: lightgray; 
+    padding: 20px;
+    border-radius: 8px;
+    width: 500px;
+    margin: 0 auto;
+    color: black;
+}
+form label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin: 15px 0 5px;
+}
+
+/* Input fields */
+input {
+    width: 475px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background: white; 
+    color: black;
+    font-size: 16px;
+}
+form img{
+    height: 200px;
+    margin-left: 0%;
+}
+/* Button styling */
+form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
