@@ -10,11 +10,11 @@
     <div class = "navbar">
         <a href="homepage.php">Home</a>
         <a href="#signup">Signup</a>
-        <a href="homepage.php">Login</a>
+        <a href="login.php">Login</a>
         <img src="logo.png">
     </div>
     <div class="about-section">
-        <h1>What we do</h1>
+        <h1>What we do at EstateEase</h1>
         <h2> We a one-stop solution for property transactions, offering advanced tools to search, list, and manage properties efficiently.</h2>
         <h1>Our Services</h1>
         <ul>
@@ -30,7 +30,7 @@
         </ul>
     </div>
         <br>
-    <div class = "signup">
+    <div id = "signup">
         <form action="signup-submit.php" method="POST">
                 <h1>Sign Up</h1>
                 <p>Create an Account to start buying and selling property today at EstateEase!</p>
@@ -53,5 +53,26 @@
                 <img src="logo.png">
         </form>
     </div>
+    <script>
+        function validateForm() {
+            var firstName = document.getElementById("first_name").value;
+            var lastName = document.getElementById("last_name").value;
+            var email = document.getElementById("email").value;
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            
+            if (firstName == "" || lastName == "" || email == "" || username == "" || password == "") {
+                alert("All fields must be filled out");
+                return false;
+            }
+            
+            if (!email.includes("@")) {
+                alert("Please enter a valid email address");
+                return false;
+            }
+            
+            return true;
+        }
+    </script>
 </body>
 </html>
