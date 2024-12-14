@@ -10,6 +10,7 @@ body{
 }
 .navbar a{
     text-decoration: none;
+    color: black;
 }
 .navbar img{
     height: 65px;
