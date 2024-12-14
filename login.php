@@ -16,7 +16,7 @@
     <br>
     <br>
     <div class="login-form">
-        <form action="process_login.php" method="POST">
+        <form action="login-submit.php" method="POST">
             <h1>Login</h1>
             <p>Welcome back to EstateEase!</p>
             

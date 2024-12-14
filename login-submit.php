@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION["user_id"] = $row["id"];
             $_SESSION["email"] = $row["email"];
             
-            header("Location: seller_dashboard.php");
+            header("Location: seller-dashboard.php");
             exit();
         } else {
             echo "Invalid password";
