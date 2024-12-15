@@ -34,6 +34,7 @@ if ($conn->query($create_users_table) === TRUE) {
 $create_properties_table = "CREATE TABLE IF NOT EXISTS properties (
     id INT AUTO_INCREMENT PRIMARY KEY,
     seller_id INT NOT NULL,
+    image INT NOT NULL,
     location VARCHAR(255) NOT NULL,
     price DECIMAL(10,2) NOT NULL,
     bedrooms INT NOT NULL,
@@ -49,6 +50,4 @@ if ($conn->query($create_properties_table) === TRUE) {
 } else {
     echo "Error creating 'properties' table: " . $conn->error . "<br>";
 }
-
-// Proceed with your application logic after table creation...
 ?>

@@ -14,6 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (password_verify($password, $row["password"])) {
             $_SESSION["loggedin"] = true;
             $_SESSION["user_id"] = $row["id"];
+            $_SESSION["user_name"] = $row["firstname"];
             $_SESSION["email"] = $row["email"];
             
             header("Location: seller-dashboard.php");
