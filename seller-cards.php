@@ -15,6 +15,7 @@ if (mysqli_num_rows($result) > 0) {
     // Loop through for each property
     while ($row = mysqli_fetch_assoc($result)) {
         $property_id = $row['id'];
+        $image = $row['image'];
         $location = $row['location'];
         $price = number_format($row['price'], 2);
         $bedrooms = $row['bedrooms'];
@@ -22,11 +23,12 @@ if (mysqli_num_rows($result) > 0) {
         $sqft = $row['sqft'];
         $created_at = date('F j, Y', strtotime($row['created_at']));
         $seller_name = $row['firstname'] . ' ' . $row['lastname'];
+        $imagePath = "house" . $image . ".webp";
 
         // Print all of the property information into a card
         echo "<div>
                 <div class='card'>
-                    <img src='path/to/property-image.jpg' class='card-img-top' alt='Property Image'>
+                    <img src='$imagePath' alt='House'>
                     <div class='card-body'>
                         <p class='card-title'>$location</p>
                         <p class='card-text'>Price: $$price</p>

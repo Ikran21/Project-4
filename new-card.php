@@ -21,11 +21,13 @@
             <p>Add property info below:</p>
 
             <p>Select an image:</p>
-            <input type="radio" id="image1" name="image" value="1" required>
+            <input type="radio" id="image1" name="image" value="1">
             <label for="image1"><img src="house1.webp" alt="House1"></label>
-            <input type="radio" id="image2" name="image" value="2" required>
+            
+            <input type="radio" id="image2" name="image" value="2">
             <label for="image2"><img src="house2.webp" alt="House2"></label>
-            <input type="radio" id="image3" name="image" value="3" required>
+            
+            <input type="radio" id="image3" name="image" value="3">
             <label for="image3"><img src="house3.webp" alt="House3"></label>
             
             <label for="location">Location:</label>
@@ -41,7 +43,7 @@
             <input type="number" id="bathrooms" name="bathrooms" step="1" min="0" required>
             
             <label for="sqft">SQFT:</label>
-            <input type="text" id="sqft" name="sqft" required>
+            <input type="number" id="sqft" name="sqft" step="1" required>
             
             <button type="submit">Submit</button>
         </form>
