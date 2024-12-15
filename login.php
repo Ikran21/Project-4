@@ -11,7 +11,7 @@
         <a href="homepage.php">Home</a>
         <a href="homepage.php#signup">Signup</a>
         <a href="login.php">Login</a>
-        <img src="logo.png">
+        <img src="logo.png" alt="EstateEase Logo">
     </div>
     <br>
     <br>
