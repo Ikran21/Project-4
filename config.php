@@ -49,6 +49,4 @@ if ($conn->query($create_properties_table) === TRUE) {
 } else {
     echo "Error creating 'properties' table: " . $conn->error . "<br>";
 }
-
-// Proceed with your application logic after table creation...
 ?>

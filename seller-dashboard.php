@@ -15,20 +15,22 @@
     </div>
     <br>
     <div class="title">
-        <?php
-        session_start();
-        
-        if (isset($_SESSION["user_id"])) {
-            $user_id = $_SESSION["user_id"];
-            echo "Welcome $user_id";
-        }
-        ?>
+        <div>
+            <?php
+            session_start();
+            
+            if (isset($_SESSION["user_id"])) {
+                $user_id = $_SESSION["user_name"];
+                echo "<h1>Welcome $user_id</h1>";
+            }
+            ?>
+        </div>
+        <div class="addCard">
+            <a href="new-card.php"><b>Add a property<b></a>
+        </div>
     </div>
     <br><br>
-    <div class="card">
-        Add seller card php
-            
-    </div>
+    <?php include 'seller-cards.php';?>
     
 </body>
 </html>
