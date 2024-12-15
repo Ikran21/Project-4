@@ -2,7 +2,7 @@
 session_start();
 require_once "config.php";
 
-$sql = "SELECT p.id, p.location, p.price, p.bedrooms, p.bathrooms, p.sqft, p.created_at, u.firstname, u.lastname
+$sql = "SELECT p.id, p.image, p.location, p.price, p.bedrooms, p.bathrooms, p.sqft, p.created_at, u.firstname, u.lastname
         FROM properties p
         INNER JOIN users u ON p.seller_id = u.id
         ORDER BY p.created_at DESC";

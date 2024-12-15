@@ -21,6 +21,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sqft = $_POST["sqft"];
     $seller_id = $_SESSION['user_id'];
 
+    if (isset($_POST["image"])) {
+        $image = $_POST["image"];
+    } else {
+        $image = 1;
+    }
+
     $stmt = $conn->prepare("INSERT INTO properties (seller_id, image, location, price, bedrooms, bathrooms, sqft) VALUES (?, ?, ?, ?, ?, ?, ?)");
     $stmt->bind_param("iisdiii", $seller_id, $image, $location, $price, $bedrooms, $bathrooms, $sqft);
     
@@ -33,6 +39,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->close();
 }
 
-header("location:javascript://history.go(-1)");
+header("location:javascript://history.go(-2)");
 $conn->close();
 ?>
