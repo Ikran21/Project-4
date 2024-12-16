@@ -46,6 +46,9 @@
             <input type="number" id="sqft" name="sqft" step="1" required>
             
             <button type="submit">Submit</button>
+            <br>
+            <br>
+            <a href="seller-dashboard.php"> Back to Dashboard</a>
         </form>
     </div>
 </body>

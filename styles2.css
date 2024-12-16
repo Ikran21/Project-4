@@ -38,11 +38,13 @@ h2{
     display: flex;
     justify-content: space-evenly;
     width: auto;
+    flex-wrap: wrap;
 }
 
 .card {
-    border-style: 2px solid lightgrey;
+    border: 2px solid lightgrey;
     border-radius: 3px;
+    margin: 3px;
 }
 
 img {

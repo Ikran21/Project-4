@@ -37,7 +37,6 @@ if (mysqli_num_rows($result) > 0) {
                         <p class='card-text'>Bathrooms: $bathrooms</p>
                         <p class='card-text'>Size: $sqft sqft</p>
                         <p class='card-text'>Listed on: $created_at</p>
-                        <a href='property-details.php?id=$property_id'>View Details</a>
                     </div>
                 </div>
             </div>";

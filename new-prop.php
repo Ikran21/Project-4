@@ -39,6 +39,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->close();
 }
 
-header("location:javascript://history.go(-2)");
+header("location:seller-dashboard.php");
 $conn->close();
 ?>
